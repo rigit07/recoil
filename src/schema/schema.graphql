@@ -1,0 +1,7 @@
+schema {
+  query: MagicCounterHelloQuery
+}
+
+type MagicCounterHelloQuery {
+  world: String
+}

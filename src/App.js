@@ -1,22 +1,26 @@
-import logo from './logo.svg';
+import {
+  RecoilRoot,
+} from 'recoil';
+// import {
+//   RecoilRelayEnvironmentProvider,
+// } from 'recoil-relay'
+// import {
+//   useRelayEnvironment
+// } from 'react-relay';
 import './App.css';
+import Counter from "./Counter";
+// import MagicCounter from "./MagicCounter";
+// import {
+//   myEnvironmentKey
+// } from './store/environment'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <RecoilRoot>
+          <Counter />
+        </RecoilRoot>
       </header>
     </div>
   );
